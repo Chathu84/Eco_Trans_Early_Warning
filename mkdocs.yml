@@ -1,7 +1,18 @@
-site_name: Eco Trans Early Warning
+site_name: Forest Ecosystem Transformations Early Warning
 site_author: Nayani Ilangakoon
 repo_url: https://github.com/eco-trans/Eco_Trans_Early_Warning
 site_description: Documentation for the Eco_Trans_Early_Warning remote sensing workflow.
+
+
+# Repository
+repo_name: Eco_Trans_Early_Warning
+repo_url: https://github.com/eco-trans/Eco_Trans_Early_Warning
+edit_uri: edit/main/docs/
+# Copyright
+copyright: 'Copyright &copy; 2024 University of Colorado Boulder'
+
+
+
 theme:
   name: material
 nav:
