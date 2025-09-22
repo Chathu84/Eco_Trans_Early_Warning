@@ -1,0 +1,12 @@
+site_name: Eco Trans Early Warning
+repo_url: https://github.com/eco-trans/Eco_Trans_Early_Warning
+site_description: Documentation for the Eco_Trans_Early_Warning remote sensing workflow.
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Tutorials:
+      - Workflow Overview: tutorials/workflow-overview.md
+  - Reference:
+      - Data & Output Structure: reference/data-structure.md
+docs_dir: docs
