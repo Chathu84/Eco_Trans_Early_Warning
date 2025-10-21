@@ -1,7 +1,7 @@
-site_name: Forest Ecosystem Transformations Early Warning
+site_name: Nayani Ilangakoon | Remote Sensing Scientist
 site_author: Nayani Ilangakoon
 repo_url: https://github.com/eco-trans/Eco_Trans_Early_Warning
-site_description: Documentation for the Eco_Trans_Early_Warning remote sensing workflow.
+site_description: Research portfolio for remote sensing driven ecosystem early warning analytics.
 
 
 # Repository
@@ -9,16 +9,67 @@ repo_name: Eco_Trans_Early_Warning
 repo_url: https://github.com/eco-trans/Eco_Trans_Early_Warning
 edit_uri: edit/main/docs/
 # Copyright
-copyright: 'Copyright &copy; 2024 University of Colorado Boulder'
+copyright: 'Copyright &copy; 2024 Nayani Ilangakoon'
 
 
 
 theme:
   name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.instant
+    - toc.integrate
+  palette:
+    - scheme: default
+      primary: teal
+      accent: light blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: "Inter"
+    code: "Fira Code"
+  icon:
+    logo: material/forest
 nav:
   - Home: index.md
+  - About: about.md
+  - Projects:
+      - Overview: projects/index.md
+      - Eco-Trans Early Warning: projects/eco-trans-early-warning.md
+      - Fire-Response Model Accuracy: projects/fire-response-model-accuracy.md
+      - Lead Time Prediction Suite: projects/lead-time-prediction-suite.md
   - Tutorials:
       - Workflow Overview: tutorials/workflow-overview.md
   - Reference:
       - Data & Output Structure: reference/data-structure.md
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/chathu84
+      name: GitHub
+extra_css:
+  - assets/styles/extra.css
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
 docs_dir: docs
