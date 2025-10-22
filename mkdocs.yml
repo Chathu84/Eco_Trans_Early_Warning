@@ -1,24 +1,71 @@
-site_name: Forest Ecosystem Transformations Early Warning
+site_name: "Nayani Ilangakoon | Remote Sensing Scientist"
 site_author: Nayani Ilangakoon
-repo_url: https://github.com/eco-trans/Eco_Trans_Early_Warning
-site_description: Documentation for the Eco_Trans_Early_Warning remote sensing workflow.
-
-
-# Repository
-repo_name: Eco_Trans_Early_Warning
-repo_url: https://github.com/eco-trans/Eco_Trans_Early_Warning
+site_description: "Portfolio site featuring ecosystem resilience analytics and remote-sensing research."
+site_url: https://chathu84.github.io/Nayani-Ilangakoon/
+repo_name: Chathu84/Nayani-Ilangakoon
+repo_url: https://github.com/Chathu84/Nayani-Ilangakoon
 edit_uri: edit/main/docs/
-# Copyright
-copyright: 'Copyright &copy; 2024 University of Colorado Boulder'
 
+copyright: '© 2024 Nayani Ilangakoon'
 
+plugins:
+  - search
 
 theme:
   name: material
+  features:
+    - navigation.top
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.instant
+  palette:
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: "Work Sans"
+    code: "Fira Code"
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Chathu84
+      name: GitHub
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
 nav:
-  - Home: index.md
-  - Tutorials:
-      - Workflow Overview: tutorials/workflow-overview.md
-  - Reference:
-      - Data & Output Structure: reference/data-structure.md
+  - Profile: index.md
+  - Eco-Trans Early Warning: projects/eco-trans-early-warning.md
+  - Forest Disturbance Forecasting: projects/forest-disturbance-forecasting.md
+  - Coastal Resilience Atlas: projects/coastal-resilience-atlas.md
+
 docs_dir: docs
