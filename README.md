@@ -1,19 +1,38 @@
-# Eco_Trans_Early_Warning
-Detection of early warning signs of ecosystem transformations using remote sensing
+# Nayani Ilangakoon — Portfolio Hub
 
-## Repository Overview
-- **Core directories**: `data/` stores raster inputs, `output/` holds intermediate artifacts and model results, and `scripts/` contains the analysis workflow.
-- **Primary workflow scripts**:
-  - `scripts/01_load_rasters.R` loads and aligns NDVI, soil moisture, drought, transition, fire, and static driver rasters that support later processing steps.
-  - `scripts/02_extract_ews_and_drivers.R` sources the raster loaders, computes early warning signals (autocorrelation, variance, NDVI slope), estimates signal emergence, and compiles pixel-level feature tables—including static drivers and fire frequency—before fitting an exploratory GAM for lead time.
-  - `scripts/03_fit_bart_model.R` trains a Bayesian Additive Regression Trees (BART) model on the engineered features to predict warning lead times and saves the fitted model.
-  - `scripts/04_predict_lead_time_raster.R` projects model predictions back into raster space for mapping.
-- **End-to-end example**: `scripts/full_primary_workflow.R` ties together metric extraction, GAM modeling, and ROC evaluation with fire vs. non-fire stratification for reproducing the core analysis.
-- **Supporting scripts**: variations such as `build_leadtime_bart_model.R`, `model_accuracy_fire.R`, `prediction_sup2.R`, and `bart_to_predict.R` explore alternate feature sets, diagnostics, accuracy comparisons, and partial dependence visualization.
+This repository powers a [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) site that introduces Nayani Ilangakoon's remote-sensing research profile and showcases flagship projects. The documentation doubles as a lightweight knowledge base for the analytical assets that live alongside the site (R scripts, data, and derived outputs).
 
-## Next Steps for Newcomers
-- Become familiar with the `terra` package for raster I/O, alignment, and pixel-wise time series extraction.
-- Review early warning theory (autocorrelation, variance, NDVI trend) and how it is implemented through functions like `detect_ews_year` and `compute_ews`.
-- Explore `dbarts` and `mgcv` to understand how Bayesian Additive Regression Trees and Generalized Additive Models are used to interpret environmental drivers and lead-time predictions.
-- Investigate how fire dynamics are handled, as several scripts stratify analyses by fire vs. non-fire transitions.
-- Consider automating the pipeline once comfortable (e.g., with `targets` or `drake`) and replace placeholder raster paths with actual datasets for reproducible large-scale processing.
+## 🚀 What you'll find
+- **Profile landing page** summarising research interests, current focus areas, and quick ways to connect.
+- **Project tabs** for the Eco-Trans Early Warning workflow and companion environmental analytics prototypes.
+- **Research assets** in the `scripts/`, `data/`, and `output/` directories that back many of the insights highlighted on the site.
+
+## 🧭 Repository layout
+| Path | Purpose |
+| --- | --- |
+| `docs/` | Markdown sources for the MkDocs site (profile, project pages, and supporting content). |
+| `mkdocs.yml` | MkDocs configuration, including navigation tabs for each featured project. |
+| `scripts/` | Reproducible R scripts for remote-sensing preprocessing, feature engineering, modelling, and prediction. |
+| `data/` | Placeholder directory for raster inputs and auxiliary datasets. |
+| `output/` | Location for generated model artefacts, diagnostics, and figures. |
+
+## ▶️ Run the site locally
+1. **Install dependencies** (if not already available):
+   ```bash
+   pip install mkdocs mkdocs-material
+   ```
+2. **Serve the documentation** and preview changes live:
+   ```bash
+   mkdocs serve
+   ```
+3. Open the served address (typically `http://127.0.0.1:8000/`) in your browser.
+
+To produce a static build, run `mkdocs build` and deploy the generated `site/` directory to any static host (e.g., GitHub Pages).
+
+## 🧱 Extending the portfolio
+- Edit `docs/index.md` to refresh the landing page biography, featured metrics, or contact links.
+- Add a new Markdown file in `docs/projects/` and register it under `nav:` in `mkdocs.yml` to surface another project tab.
+- Use MkDocs Material [admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/), [grids](https://squidfunk.github.io/mkdocs-material/reference/grids/), or [cards](https://squidfunk.github.io/mkdocs-material/reference/cards/) for richer storytelling.
+
+## ✨ Legacy research workflow
+The portfolio highlights originate from the `Eco_Trans_Early_Warning` research program. Its end-to-end workflow remains available in the `scripts/` folder for anyone interested in reproducing the modelling pipeline or adapting it to new geographies.

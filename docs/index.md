@@ -1,25 +1,50 @@
-# Eco Trans Early Warning
+# Hello, I'm Nayani Ilangakoon 👋
 
-Welcome to the documentation site for the Eco_Trans_Early_Warning project. This initiative focuses on detecting early warning signals of ecosystem transformations using remote sensing data products and statistical learning techniques.
+Remote-sensing scientist and geospatial analyst focused on spotting the subtle signals that ecosystems emit before they shift. I build reproducible workflows that blend satellite observations, statistical learning, and storytelling to help land managers respond faster to change.
 
-## Project Goals
-- Integrate multi-source remote sensing rasters (NDVI, soil moisture, drought indices, transition maps, fire history, and static drivers).
-- Derive early warning indicators such as autocorrelation, variance, and vegetation trends to anticipate ecosystem changes.
-- Model warning lead times with Bayesian Additive Regression Trees (BART) and Generalized Additive Models (GAMs).
-- Produce spatial predictions that highlight areas at risk of rapid ecological transitions.
+## Snapshot
+- 🌲 Lead developer of early-warning analytics that flag forest transitions before they become irreversible disturbances.
+- 🛰️ Experienced with harmonising optical, radar, and climate data products for large-area monitoring.
+- 📊 Comfortable moving between research code (R, Python) and decision-ready visuals, dashboards, and reports.
+- 🤝 Collaborator who enjoys translating technical insight for ecologists, fire managers, and policy partners.
 
-## Repository Highlights
-- **Data management**: Raster inputs reside in the `data/` directory, while processed artifacts and model outputs are stored in `output/`.
-- **Reproducible scripts**: The `scripts/` folder contains modular R scripts for loading data, engineering features, training models, and generating predictions.
-- **End-to-end workflow**: `scripts/full_primary_workflow.R` orchestrates the key analytical steps for reproducibility.
+## What I'm exploring right now
+1. **Scaling early-warning signals** from pixel-level experiments to continental mapping products.
+2. **Bringing uncertainty front and centre** so decision makers can weigh risk when resources are tight.
+3. **Designing intuitive narratives** that help stakeholders navigate complex resilience questions.
 
-## Getting Started
-1. Review the tutorials in this documentation to understand how to run the workflow end-to-end.
-2. Ensure required R packages (including `terra`, `dbarts`, and `mgcv`) are installed.
-3. Update paths in the scripts to match your local raster data locations.
-4. Execute the primary workflow script or individual stages as needed.
+## Skills at a glance
+| Domain | Highlights |
+| --- | --- |
+| Remote sensing | Landsat, Sentinel-2, harmonised surface reflectance, SAR backscatter pre-processing |
+| Modelling | Bayesian Additive Regression Trees (BART), Generalised Additive Models (GAMs), time-series early-warning indicators |
+| Spatial analysis | Raster algebra, change detection, trend analysis, stratified accuracy assessment |
+| Communication | MkDocs Material, Quarto, R Markdown, stakeholder workshops, technical documentation |
 
-## Further Reading
-- [Early warning signals in ecological systems](https://doi.org/10.1016/j.tree.2015.05.009)
-- [Bayesian Additive Regression Trees](https://projecteuclid.org/journals/annals-of-applied-statistics/volume-4/issue-1/Bayesian-additive-regression-trees/10.1214/09-AOAS285.short)
+## Explore the projects
+<div class="grid cards" markdown>
 
+-   :material-satellite-variant: **Eco-Trans Early Warning**  
+    Detects ecosystem transitions using multi-sensor remote-sensing inputs and interpretable modelling.  
+    [:octicons-arrow-right-16: Read the case study](projects/eco-trans-early-warning.md)
+
+-   :material-fire: **Forest Disturbance Forecasting**  
+    Builds forward-looking indicators that anticipate fire-driven change across mixed conifer forests.  
+    [:octicons-arrow-right-16: Dive into the workflow](projects/forest-disturbance-forecasting.md)
+
+-   :material-earth: **Coastal Resilience Atlas**  
+    Tracks mangrove and blue-carbon habitats through sea-level rise and human pressure scenarios.  
+    [:octicons-arrow-right-16: Browse the prototype](projects/coastal-resilience-atlas.md)
+
+</div>
+
+## Impact highlights
+!!! success "Early-warning insights in action"
+    - Flagged at-risk forest polygons up to **18 months** ahead of observed regime shifts, informing targeted field campaigns.
+    - Surface fuel treatments were prioritised in two Colorado watersheds after scenario results illustrated potential fire behaviour shifts.
+    - Coastal planners piloted the atlas interface to align restoration funding with vulnerable blue-carbon zones.
+
+## Let's connect
+- :fontawesome-brands-github: [github.com/Chathu84](https://github.com/Chathu84)
+- :material-email-fast-outline: Prefer email? Drop a note via the contact form on the GitHub profile.
+- :material-notebook-heart: Curious about collaborating? Each project page lists data sources, tooling, and next-step ideas.
