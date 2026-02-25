@@ -3,10 +3,10 @@
 This repository focuses on spotting the subtle signals that ecosystems emit before they shift. The reproducible workflows that blend satellite observations, statistical learning, and storytelling can help land managers respond faster to change.
 
 ## Snapshot
-- 🌲 Lead developer of early-warning analytics that flag forest transitions before they become irreversible disturbances.
-- 🛰️ Experienced with harmonising optical, radar, and climate data products for large-area monitoring.
-- 📊 Comfortable moving between research code (R, Python) and decision-ready visuals, dashboards, and reports.
-- 🤝 Collaborator who enjoys translating technical insight for ecologists, fire managers, and policy partners.
+- 🌲 Provide early-warning analytics that flag forest transitions before they become irreversible disturbances.
+- 🛰️ Harmonize optical, lidar, and climate data products for large-area monitoring.
+- 📊 Use R base decision-ready visuals, dashboards, and reports.
+- 🤝 Translate technical insight for ecologists, fire managers, and policy partners.
 
 ## What I'm exploring right now
 1. **Scaling early-warning signals** from pixel-level experiments to continental mapping products.
