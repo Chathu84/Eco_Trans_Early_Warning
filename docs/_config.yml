@@ -1,0 +1,9 @@
+title: Eco_Trans_Early_Warning
+remote_theme: pages-themes/cayman@v0.2.0
+
+# IMPORTANT for project pages:
+baseurl: "/Eco_Trans_Early_Warning"
+url: "https://chathub84.github.io"
+
+plugins:
+  - jekyll-remote-theme
