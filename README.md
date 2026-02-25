@@ -1,4 +1,4 @@
-# Nayani Ilangakoon — Portfolio Hub
+# Early Warning Signs of Ecosystem Transformations
 
 This repository powers a [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) site that introduces Nayani Ilangakoon's remote-sensing research profile and showcases flagship projects. The documentation doubles as a lightweight knowledge base for the analytical assets that live alongside the site (R scripts, data, and derived outputs).
 
