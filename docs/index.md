@@ -1,4 +1,4 @@
-# Hello, I'm Nayani Ilangakoon 👋
+# Early Warning Signs of Ecosystem Transformation
 
 Remote-sensing scientist and geospatial analyst focused on spotting the subtle signals that ecosystems emit before they shift. I build reproducible workflows that blend satellite observations, statistical learning, and storytelling to help land managers respond faster to change.
 
